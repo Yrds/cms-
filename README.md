@@ -6,7 +6,9 @@
 
 ## Using with meson
 
-just include
+
+just clone this repository into your subprojects(located on your meson project root) directory include, then add this to your meson build:
+
 
 ```meson
 libcmsplusplus = subproject('cmsplusplus')
