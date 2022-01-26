@@ -1,11 +1,17 @@
-#CMS PLUS PLUS
+# CMS PLUS PLUS
+
+## NOTE:
+
+This project is not working in any ways, there is a lot os pseucode and even compiles.
+
 
 ## What da program doin?
 
+This is a library made for construct static websites with a fully customizable structure
 
+That library is meant to be used alone but can be embed in other project because is totally independent of other libraries
 
 ## Using with meson
-
 
 just clone this repository into your subprojects(located on your meson project root) directory include, then add this to your meson build:
 
@@ -24,4 +30,3 @@ executable('demo', sources, dependencies: deps)
 ```
 
 you can check `test/program/` for more details:
-
