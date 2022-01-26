@@ -1,0 +1,3 @@
+namespace cmsplusplus {
+  int test();
+}
