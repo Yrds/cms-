@@ -4,10 +4,21 @@ project('demo', 'cpp')
 libcmsplusplus = subproject('cmsplusplus')
 libcmsplusplus_dep = libcmsplusplus.get_variable('libcmsplusplus_dep')
 
-sources = [
+deps = [libcmsplusplus_dep]
+
+### DEMO ###
+
+
+demo_sources = [
 'main.cpp'
 ]
 
-deps = [libcmsplusplus_dep]
 
-executable('demo', sources, dependencies: deps)
+executable('demo', demo_sources, dependencies: deps)
+
+### SIMPLE PAGE ###
+simple_page_sources = [
+  'simplePage.cpp'
+  ]
+
+executable('simple_page', simple_page_sources, dependencies: deps)

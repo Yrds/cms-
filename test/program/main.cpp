@@ -1,16 +1,26 @@
-#include "test.hpp"
+#include "Page.hpp"
 
 int main(){
   //Desired structure for a simple website
   //
-  const site = new cmsplusplus::Site(true); //first parameter true for defaultPage //Maybe a struct herer
-
-  Page defaultPage = site.getPage();
-
-  Page[] postPages = cmsplusplus::getPagesFromMd("posts");
-
-  defaultPage.body.insertIndexToHtml(postPages);
-
-  return site.deploy("public");
+//  const site = new cmsplusplus::Site();
+//
+//  Page defaultPage = cmsplusplus::getBasicPage();
+//  defaultPage.setPath("index.html");
+//  site.insertPage(defaultPage);
+//
+//  std::vector<Page> postPages = cmsplusplus::getPagesFromMd("posts");
+//
+//  site.insertPage(postPages);
+//
+//  for(const Page& postPage: postPages) {
+//    defaultPage.getBody().insert("ul");
+//    defaultPage.getBody().insert(postPage.getAnchorList());
+//    defaultPage.getBody().insert("ul");
+//  }
+//
+  //return site.outputTo("public");
+  //
+  
 }
 
