@@ -2,7 +2,8 @@ project('libcmsplusplus', 'cpp')
 
 sources = [
 'src/Page.cpp',
-'src/Element.cpp'
+'src/Element.cpp',
+'src/HtmlElement.cpp'
 ]
 
 inc = ['inc']

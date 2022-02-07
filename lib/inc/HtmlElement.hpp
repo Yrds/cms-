@@ -6,12 +6,13 @@
 namespace cmsplusplus {
   class HtmlElement: public Element {
     private:
-      bool container;
-      std::string tag;
+      bool _container;
+      std::string _tag;
+      std::string _innerText;
     public:
-      HtmlElement(std::string element, bool container = false);
-      virtual ~HtmlElement();
-      std::string outputToString();
+      HtmlElement(std::string element, std::string innerText = "", bool container = true);
+      virtual ~HtmlElement() = default;
+      virtual std::string outputToString() const;
   };
   
 }

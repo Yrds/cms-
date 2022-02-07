@@ -8,8 +8,10 @@ namespace cmsplusplus {
     private:
       std::string _title = "No title";
     public:
-      std::string outputToString() const;
+      virtual std::string outputToString() const;
       void title(std::string title);
+      std::string preContent = "";
+      std::string afterContent = "";
       std::string title();
 
   };
